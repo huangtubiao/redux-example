@@ -35,11 +35,7 @@ App.propTypes = {
         text: PropTypes.string.isRequired,
         completed: PropTypes.bool.isRequired
     }).isRequired).isRequired,
-    visibilityFilter: PropTypes.oneOf([
-        'SHOW_ALL',
-        'SHOW_COMPLETED',
-        'SHOW_ACTIVE'
-    ]).isRequired
+    visibilityFilter: PropTypes.oneOf(['SHOW_ALL', 'SHOW_COMPLETED', 'SHOW_ACTIVE']).isRequired
 }
 
 function selectTodos(todos, filter) {

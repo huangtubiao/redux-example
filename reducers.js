@@ -1,5 +1,9 @@
+/*
+ * reducer就是一个纯函数，接受旧的state和action，返回新的state
+ * (previousState, action) => newState
+ */
 import { combineReducers } from 'redux';
-import { ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from './actions';
+import { ADD_TDOO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from './actions';
 const { SHOW_ALL } = VisibilityFilters;
 
 function visibilityFilter(state = SHOW_ALL, action) {
@@ -28,9 +32,6 @@ function todos(state = [], action) {
     }
 }
 
-const todoApp = combineReducers({
-    visibilityFilter,
-    todos
-})
+const todoApp = combineReducers({visibilityFilter, todos})
 
 export default todoApp
