@@ -45,6 +45,10 @@ Redux 的设计思想很简单，就两句话。
 
 请务必记住这两句话，下面就是详细解释。
 
+# redux 工作流程
+
+[Redux Flow](https://github.com/huangtubiao/redux-example/issues/1)
+
 #Ref
 
 - [redux-in-chinese](http://cn.redux.js.org/docs/basics/UsageWithReact.html)
